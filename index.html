@@ -26,7 +26,6 @@
             margin-top: 0; 
             margin-bottom: 20px;
         }
-        /* Dimensioni perfette per contenere il grafico scuro di ThingSpeak */
         iframe {
             width: 450px;
             height: 260px;
@@ -40,8 +39,8 @@
     <div class="card">
         <h2>Livello Fosso Valtriano</h2>
         
-        <!-- Grafico con parametri aggiuntivi per forzare lo stile -->
-        <iframe src="https://thingspeak.com/channels/3549299/charts/1?days=1&dynamic=true"></iframe>
+        <!-- Grafico ThingSpeak con tutti i parametri della tua schermata -->
+        <iframe src="https://thingspeak.com/channels/3549299/charts/1?title=Livello+Fosso+Valtriano&xaxis=Ore&color=%23ffffff&background=%23000000&type=line&dynamic=true&days=1&min=0&max=2"></iframe>
         
     </div>
 </body>
