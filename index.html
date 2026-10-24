@@ -8,13 +8,13 @@
         body { 
             font-family: Arial, sans-serif; 
             text-align: center; 
-            background-color: #121212; /* Sfondo scuro della pagina */
+            background-color: #121212; 
             color: #e0e0e0; 
             padding: 40px; 
             margin: 0;
         }
         .card { 
-            background: #1e1e1e; /* Sfondo scuro del riquadro */
+            background: #1e1e1e; 
             padding: 25px; 
             border-radius: 12px; 
             display: inline-block; 
@@ -26,22 +26,22 @@
             margin-top: 0; 
             margin-bottom: 20px;
         }
-        /* Dimensioni originali fisse per evitare che il grafico si veda monco */
+        /* Dimensioni perfette per contenere il grafico scuro di ThingSpeak */
         iframe {
             width: 450px;
             height: 260px;
-            border: 1px solid #444;
+            border: 1px solid #333;
             border-radius: 8px;
-            background: #ffffff;
+            background: #000000;
         }
     </style>
 </head>
 <body>
     <div class="card">
-        <h2>Livello Acqua in Tempo Reale</h2>
+        <h2>Livello Fosso Valtriano</h2>
         
-        <!-- Grafico ThingSpeak con le dimensioni originali -->
-        <iframe src="https://thingspeak.com/channels/3549299/charts/1"></iframe>
+        <!-- Grafico con parametri aggiuntivi per forzare lo stile -->
+        <iframe src="https://thingspeak.com/channels/3549299/charts/1?days=1&dynamic=true"></iframe>
         
     </div>
 </body>
