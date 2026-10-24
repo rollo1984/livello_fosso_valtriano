@@ -3,30 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Livello Acqua in Tempo Reale</title>
+    <title>Monitoraggio Livello Acqua</title>
     <style>
         body { 
             font-family: Arial, sans-serif; 
             text-align: center; 
-            background-color: #f4f7f6; 
-            padding: 40px; 
+            background-color: #121212; 
+            color: #e0e0e0; 
+            padding: 20px; 
+            margin: 0;
         }
         .card { 
-            background: white; 
-            padding: 25px; 
+            background: #1e1e1e; 
+            padding: 20px; 
             border-radius: 12px; 
             display: inline-block; 
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5); 
+            border: 1px solid #333;
+            max-width: 100%;
+            box-sizing: border-box;
         }
-        h2 { color: #333; margin-top: 0; }
+        h2 { 
+            color: #ffffff; 
+            margin-top: 0; 
+            font-size: 1.5rem;
+        }
+        iframe {
+            width: 100%;
+            max-width: 450px;
+            height: 260px;
+            border: 1px solid #444 !important;
+            border-radius: 8px;
+            background: #ffffff; /* Mantiene bianco lo sfondo interno del grafico per leggibilità */
+        }
     </style>
 </head>
 <body>
     <div class="card">
-        <h2>Monitoraggio Livello Acqua</h2>
+        <h2>Livello Acqua in Tempo Reale</h2>
         
-        <!-- INCOLLA QUI L'IFRAME CON IL TUO ID CORRETTO -->
-        <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/3549299/charts/1"></iframe>
+        <!-- Grafico ThingSpeak collegato al tuo canale 3549299 -->
+        <iframe src="https://thingspeak.com/channels/3549299/charts/1"></iframe>
         
     </div>
 </body>
